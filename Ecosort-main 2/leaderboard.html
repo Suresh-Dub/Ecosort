@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoSort Global Leaderboard</title>
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="EcoSort Global Impact" />
+  <meta property="og:description" content="Join the fight against waste and environmental pollution. EcoSort helps you sort waste effectively!" />
+  <meta property="og:image" content="assets/icons/ecosort-og.png" />
+  <meta property="og:url" content="https://ecosort.web.app" />
+  <meta property="og:type" content="webapp" />
+  <meta property="og:site_name" content="EcoSort" />
+
+  <!-- Optional: Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="EcoSort Global Impact" />
+  <meta name="twitter:description" content="Join the fight against waste and environmental pollution. EcoSort helps you sort waste effectively!" />
+  <meta name="twitter:image" content="assets/icons/ecosort-og.png" />
+  <link rel="stylesheet" href="styles.css">
+  <!-- Chart.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.1.1/dist/chart.umd.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h2>EcoSort Global Impact</h2>
+      <p>See how much waste has been sorted by each country!.</p>
+    </header>
+
+    <!-- Bar Chart for Country Leaderboard -->
+    <div class="card">
+      <h3>Top Countries by Waste Sorted</h3>
+      <canvas id="countryChart" width="400" height="300"></canvas>
+    </div>
+
+    <button class="btn-secondary" onclick="window.location.replace('dashboard.html')">Back to Home</button>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>

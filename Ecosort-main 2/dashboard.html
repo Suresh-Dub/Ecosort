@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoSort - Waste Sorting</title>
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="EcoSort Global Impact" />
+  <meta property="og:description" content="Join the fight against waste and environmental pollution. EcoSort helps you sort waste effectively!" />
+  <meta property="og:image" content="assets/icons/ecosort-og.png" />
+  <meta property="og:url" content="https://ecosort.web.app" />
+  <meta property="og:type" content="webapp" />
+  <meta property="og:site_name" content="EcoSort" />
+
+  <!-- Optional: Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="EcoSort Global Impact" />
+  <meta name="twitter:description" content="Join the fight against waste and environmental pollution. EcoSort helps you sort waste effectively!" />
+  <meta name="twitter:image" content="assets/icons/ecosort-og.png" />
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/icons/ecosort.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>EcoSort</h1>
+      <p>Empowering sustainable decisions one item at a time</p>
+    </header>
+    <main>
+      <div class="card impact-card">
+        <h2>Your Impact</h2>
+        <p>Waste diverted from landfill: <span id="divertedWaste">_</span> kg</p>
+        <p>Green Points earned: <span id="greenPoints">_</span></p>
+        <button class="btn" onclick="window.location.href='upload.html'">Start Classifying</button>
+      </div>
+
+      <!-- Link to Leaderboard -->
+      <button class="btn-secondary" onclick="window.location.href='leaderboard.html'">View Global Impact</button>
+    </main>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
